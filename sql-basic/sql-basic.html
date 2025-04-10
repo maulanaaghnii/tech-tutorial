@@ -24,44 +24,24 @@
   </head>
   <body>
   <div class="container">
-    <h1>Basic SQL</h1>
-    <h3>Introduction</h3>
-    <p style="text-align: justify;">Structured Query Language, or SQL, is the standard language used to interact with relational databases. 
-      Whether you're retrieving data, inserting new records, updating existing information, or deleting unnecessary entries, SQL is the essential tool that makes it all possible.</p>
-<p style="text-align: justify;">In this module, we'll explore the basic concepts of SQL—perfect for beginners. 
-You don't need prior experience with databases; just bring your curiosity and a willingness to learn. By the end of this course, you'll understand how to write simple queries, filter results, sort data, and perform basic operations that are foundational for working with any database system.</p>
-<p style="text-align: justify;">Let’s get started on your journey to mastering SQL!</p>
-    <div class="stack">
-      <input type="checkbox" name="faq" id="faq0" />
-      <label for="faq0">
-        <h2>0</h2>
-        <h3>Introduction</h3>
-      </label>
-      
-      <div class="content">
-        <br>
-        <hr>
-        <p class="desc">Create new database</p>
-        <div class="code-background">
-          <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-          <pre><code>
-<span class="purple">CREATE DATABASE</span> nama_database;
-          </code></pre>
-        </div>
-      </div>
-    </div>
-    
+    <h1>SQL Dasar</h1>
+    <h3>Pendahuluan</h3>
+    <p style="text-align: justify;">Structured Query Language, atau SQL, adalah bahasa standar yang digunakan untuk berinteraksi dengan database relasional. 
+      Baik Anda mengambil data, memasukkan record baru, memperbarui informasi yang ada, atau menghapus entri yang tidak diperlukan, SQL adalah alat penting yang membuat semuanya mungkin.</p>
+<p style="text-align: justify;">Dalam modul ini, kita akan mempelajari konsep dasar SQL—cocok untuk pemula. 
+Anda tidak memerlukan pengalaman sebelumnya dengan database; cukup bawa rasa ingin tahu dan kemauan untuk belajar. Di akhir kursus ini, Anda akan memahami cara menulis query sederhana, memfilter hasil, mengurutkan data, dan melakukan operasi dasar yang menjadi fondasi untuk bekerja dengan sistem database apa pun.</p>
+<p style="text-align: justify;">Mari kita mulai perjalanan Anda untuk menguasai SQL!</p>
     <div class="stack">
       <input type="checkbox" name="faq" id="faq1" />
       <label for="faq1">
         <h2>1</h2>
-        <h3>Basic Database and Table</h3>
+        <h3>Basic Database & Table</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Create new database</p>
+        <p class="desc">Membuat database baru</p>
         <div class="code-background">
         <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
         <pre><code>
@@ -69,14 +49,14 @@ You don't need prior experience with databases; just bring your curiosity and a 
         </code></pre>
       
       </div>
-      <p class="desc">Using database</p>
+      <p class="desc">Menggunakan database</p>
         <div class="code-background">
         <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
         <pre><code>
 <span class="purple">USE</span> nama_database;
         </code></pre>
       </div>
-      <p class="desc">Create new table</p>
+      <p class="desc">Membuat tabel baru</p>
         <div class="code-background">
         <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
         <pre><code>
@@ -96,48 +76,48 @@ You don't need prior experience with databases; just bring your curiosity and a 
       <input type="checkbox" name="faq" id="faq2" />
       <label for="faq2">
         <h2>2</h2>
-        <h3>Basic Data Operations (CRUD)</h3>
+        <h3>Basic CRUD Operations</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Add single record</p>
+        <p class="desc">Menambah satu record</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 INSERT INTO products (name, price, category) 
-VALUES ('Laptop', 15000000, 'Electronics');
+VALUES ('Laptop', 15000000, 'Elektronik');
           </code></pre>
         </div>
-        <p class="desc">Add multiple records</p>
+        <p class="desc">Menambah beberapa record</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 INSERT INTO products (name, price, category) VALUES 
-    ('Mouse', 200000, 'Electronics'),
-    ('Keyboard', 500000, 'Electronics');
+    ('Mouse', 200000, 'Elektronik'),
+    ('Keyboard', 500000, 'Elektronik');
           </code></pre>
         </div>
-        <p class="desc">Read data with various conditions</p>
+        <p class="desc">Membaca data dengan kondisi yang berbeda</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
-SELECT * FROM products;  -- All columns
-SELECT name, price FROM products;  -- Specific columns
-SELECT DISTINCT category FROM products;  -- Unique values
+SELECT * FROM products;  -- Semua kolom
+SELECT name, price FROM products;  -- Kolom tertentu
+SELECT DISTINCT category FROM products;  -- Nilai unik
           </code></pre>
         </div>
-        <p class="desc">Update data</p>
+        <p class="desc">Mengupdate data</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 UPDATE products 
-SET price = price * 1.1  -- Increase price by 10%
-WHERE category = 'Electronics';
+SET price = price * 1.1  -- Meningkatkan harga sebesar 10%
+WHERE category = 'Elektronik';
           </code></pre>
         </div>
-        <p class="desc">Delete data</p>
+        <p class="desc">Menghapus data</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
@@ -151,42 +131,42 @@ DELETE FROM products WHERE price < 100000;
       <input type="checkbox" name="faq" id="faq3" />
       <label for="faq3">
         <h2>3</h2>
-        <h3>Filter and Complex Conditions</h3>
+        <h3>Grouping & Counting</h3>
       </label>
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Using comparison operators</p>
+        <p class="desc">Menggunakan operator perbandingan</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT * FROM products 
-WHERE price >= 1000000 AND price <= 5000000;
+WHERE price >= 1000000 & price <= 5000000;
           </code></pre>
         </div>
-        <p class="desc">BETWEEN for range</p>
+        <p class="desc">BETWEEN untuk rentang</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT * FROM products 
-WHERE price BETWEEN 1000000 AND 5000000;
+WHERE price BETWEEN 1000000 & 5000000;
           </code></pre>
         </div>
-        <p class="desc">IN for multiple values</p>
+        <p class="desc">IN untuk beberapa nilai</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT * FROM products 
-WHERE category IN ('Electronics', 'Furniture');
+WHERE category IN ('Elektronik', 'Furniture');
           </code></pre>
         </div>
-        <p class="desc">LIKE for pattern matching</p>
+        <p class="desc">LIKE untuk pencarian pola</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT * FROM products 
-WHERE name LIKE '%phone%';  -- Search for names with 'phone'
-WHERE name LIKE '_ouse';    -- Search for words ending with 'ouse'
+WHERE name LIKE '%phone%';  -- Mencari nama dengan 'phone'
+WHERE name LIKE '_ouse';    -- Mencari kata yang diakhiri dengan 'ouse'
           </code></pre>
         </div>
       </div>
@@ -196,36 +176,23 @@ WHERE name LIKE '_ouse';    -- Search for words ending with 'ouse'
       <input type="checkbox" name="faq" id="faq4" />
       <label for="faq4">
         <h2>4</h2>
-        <h3>Aggregate Functions and Grouping</h3>
+        <h3>Grouping & Counting</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Basic aggregate functions</p>
-        <div class="code-background">
-          <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-          <pre><code>
-SELECT 
-    COUNT(*) as total_products,
-    AVG(price) as average_price,
-    MIN(price) as lowest_price,
-    MAX(price) as highest_price,
-    SUM(price) as total_value
-FROM products;
-          </code></pre>
-        </div>
-        <p class="desc">Grouping with conditions</p>
+        <p class="desc">Mengelompokkan hasil berdasarkan kategori</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT 
     category,
-    COUNT(*) as number_of_products,
-    AVG(price) as average_price
+    COUNT(*) as jumlah_produk,
+    AVG(price) as harga_rata_rata
 FROM products
 GROUP BY category
-HAVING COUNT(*) > 5;  -- Filter after grouping
+HAVING COUNT(*) > 5;  -- Filter setelah mengelompokkan
           </code></pre>
         </div>
       </div>
@@ -235,7 +202,7 @@ HAVING COUNT(*) > 5;  -- Filter after grouping
       <input type="checkbox" name="faq" id="faq5" />
       <label for="faq5">
         <h2>5</h2>
-        <h3>Joins and Relations</h3>
+        <h3>Join & Relationships</h3>
       </label>
       
       <div class="content">
@@ -277,17 +244,17 @@ FROM products p
 RIGHT JOIN categories c ON p.category_id = c.id;
           </code></pre>
         </div>
-        <p class="desc">Grouping with conditions</p>
+        <p class="desc">Mengelompokkan dengan kondisi</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT 
     category,
-    COUNT(*) as number_of_products,
-    AVG(price) as average_price
+    COUNT(*) as jumlah_produk,
+    AVG(price) as harga_rata_rata
 FROM products
 GROUP BY category
-HAVING COUNT(*) > 5;  -- Filter after grouping
+HAVING COUNT(*) > 5;  -- Filter setelah mengelompokkan
           </code></pre>
         </div>
       </div>
@@ -298,22 +265,22 @@ HAVING COUNT(*) > 5;  -- Filter after grouping
       <input type="checkbox" name="faq" id="faq6" />
       <label for="faq6">
         <h2>6</h2>
-        <h3>Subqueries and Advanced Queries</h3>
+        <h3>Subquery & Advanced Queries</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Subquery in SELECT</p>
+        <p class="desc">Subquery dalam SELECT</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 SELECT name, price,
-    (SELECT AVG(price) FROM products) as average_price
+    (SELECT AVG(price) FROM products) as harga_rata_rata
 FROM products;
           </code></pre>
         </div>
-        <p class="desc">Subquery with WHERE</p>
+        <p class="desc">Subquery dengan WHERE</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
@@ -323,17 +290,17 @@ WHERE price > (
 );
           </code></pre>
         </div>
-        <p class="desc">Subquery in FROM</p>
+        <p class="desc">Subquery dalam FROM</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
-SELECT category, avg_price
+SELECT category, harga_rata_rata
 FROM (
-    SELECT category, AVG(price) as avg_price
+    SELECT category, AVG(price) as harga_rata_rata
     FROM products
     GROUP BY category
 ) as category_stats
-WHERE avg_price > 1000000;
+WHERE harga_rata_rata > 1000000;
           </code></pre>
         </div>
       </div>
@@ -344,13 +311,13 @@ WHERE avg_price > 1000000;
       <input type="checkbox" name="faq" id="faq7" />
       <label for="faq7">
         <h2>7</h2>
-        <h3>Indexing and Optimization</h3>
+        <h3>Index & Optimization</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Create index for query optimization</p>
+        <p class="desc">Membuat indeks untuk optimasi query</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
@@ -358,14 +325,14 @@ CREATE INDEX idx_category ON products(category);
 CREATE INDEX idx_price ON products(price);
           </code></pre>
         </div>
-        <p class="desc">Composite index for multiple columns</p>
+        <p class="desc">Indeks komposit untuk beberapa kolom</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 CREATE INDEX idx_cat_price ON products(category, price);
           </code></pre>
         </div>
-        <p class="desc">Delete index</p>
+        <p class="desc">Menghapus indeks</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
@@ -379,34 +346,34 @@ DROP INDEX idx_category ON products;
       <input type="checkbox" name="faq" id="faq8" />
       <label for="faq8">
         <h2>8</h2>
-        <h3>Views and Stored Procedures</h3>
+        <h3>View & Stored Procedures</h3>
       </label>
       
       <div class="content">
         <br>
         <hr>
-        <p class="desc">Create view</p>
+        <p class="desc">Membuat view</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
-CREATE VIEW expensive_products AS
+CREATE VIEW produk_mahal AS
 SELECT * FROM products
 WHERE price > 5000000;
           </code></pre>
         </div>
-        <p class="desc">Create stored procedure</p>
+        <p class="desc">Membuat prosedur tersimpan</p>
         <div class="code-background">
           <button class="copy-btn" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
           <pre><code>
 DELIMITER //
-CREATE PROCEDURE update_prices(
-    IN category_name VARCHAR(50),
-    IN increase_percentage INT
+CREATE PROCEDURE update_harga(
+    IN nama_kategori VARCHAR(50),
+    IN persentase_kenaikan INT
 )
 BEGIN
     UPDATE products
-    SET price = price * (1 + increase_percentage / 100)
-    WHERE category = category_name;
+    SET price = price * (1 + persentase_kenaikan / 100)
+    WHERE category = nama_kategori;
 END//
           </code></pre>
         </div>
